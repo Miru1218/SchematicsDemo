@@ -1,0 +1,9 @@
+{
+    "schema": "http://json-schema.org/schema",
+    "$id": "exercise-3",
+    "title": "exercise-3",
+    "type": "object",
+    "description": "exercise-3",
+    "properties": {},
+    "required": []
+}

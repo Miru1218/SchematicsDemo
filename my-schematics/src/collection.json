@@ -1,0 +1,19 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "my-schematics": {
+      "description": "A blank schematic.",
+      "factory": "./my-schematics/index#mySchematics"
+    },
+    "exercise-2": {
+      "description": "exercise-2",
+      "factory": "./exercise-2/index#exercise2",
+      "schema": "./exercise-2/schema.json"
+    },
+    "exercise-3": {
+      "description": "exercise-3",
+      "factory": "./exercise-3/index#exercise3",
+      "schema": "./exercise-3/schema.json"
+    }
+  }
+}

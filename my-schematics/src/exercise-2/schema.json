@@ -1,0 +1,44 @@
+{
+    "schema": "http://json-schema.org/schema",
+    "$id": "exercise-2",
+    "title": "exercise-2",
+    "type": "object",
+    "description": "exercise-2",
+    "properties": {
+        "name": {
+            "description": "name",
+            "type": "string",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            },
+            "x-prompt": "Your Name?"
+        },
+        "sex": {
+            "description": "sex",
+            "type": "string",
+            "default": "m",
+            "x-prompt": {
+                "message": "Your sex?",
+                "type": "list",
+                "items": [
+                    {
+                        "value": "m",
+                        "label": "Male"
+                    },
+                    {
+                        "value": "f",
+                        "label": "Female"
+                    }
+                ]
+            }
+        },
+        "like": {
+            "description": "like",
+            "type": "boolean",
+            "default": "true",
+            "x-prompt": "Like Schematics?"
+        }
+    },
+    "required": []
+}
